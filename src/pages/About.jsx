@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.svg';
 
 export default function About() {
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ export default function About() {
             <div class="container col-xxl-8 px-4 py-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="character1" class="d-block mx-lg-auto img-fluid logo" alt=" " width="650" height="500" loading="lazy" />
+                        <img src={logo} class="d-block mx-lg-auto img-fluid logo" alt="Saffron Box" width="650" height="500" loading="lazy" />
                     </div>
                     <div class="col-lg-6">
                         <h1 class="display-5 fw-bold lh-1 mb-3">Connecting Hearts Across Borders: India Post's Diaspora Bridge</h1>

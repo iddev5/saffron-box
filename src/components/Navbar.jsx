@@ -1,11 +1,16 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { IoCartOutline } from "react-icons/io5";
+import logo from '../assets/logo.svg';
 
 export default function Navbar() {
     return <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
-            <Link className="navbar-brand" to={'/'}><p>SaffronBox</p></Link>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <Link className="navbar-brand" to={'/'}>
+                <span className="flex items-center">
+                    <img src={logo} width="60" loading="lazy" className="mr-2" />Saffron Box
+                </span>
+            </Link>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">   
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div id="navbarNavAltMarkup">

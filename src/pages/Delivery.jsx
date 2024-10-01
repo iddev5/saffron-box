@@ -8,7 +8,7 @@ export default function Delivery() {
     return <>
         <Navbar />
         <div className="flex flex-col w-full mt-20 items-center justify-center">
-            <form className="flex flex-col w-4/12" method="POST" onSubmit={() => navigate('/')}>
+            <form className="flex flex-col md:w-4/12" method="POST" onSubmit={() => navigate('/')}>
                 <label for="pincode">Pincode</label>
                 <input id="pincode" type="number" className="border-4" />
                 <label for="country">Country</label>
@@ -20,7 +20,7 @@ export default function Delivery() {
                 <label for="state">State</label>
                 <input id="state" type="text" className="border-4" />
 
-                <input className="bg-white text-black border-4 border-[#212529] rounded-lg font-bold text-sm p-1.5 w-3/12 mt-5" type="submit" value="Place order!" />
+                <input className="bg-white text-black border-4 border-[#212529] rounded-lg font-bold text-sm p-1.5 md:w-3/12 mt-5" type="submit" value="Place order!" />
             </form>
         </div>
         <Footer />

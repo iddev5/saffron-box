@@ -31,7 +31,7 @@ export default function Main() {
           <Circles height="80" width="80" color="#3b82f6"/>
         </div>
       ) : (
-        <div className="min-h-[80vh] grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl mx-auto mt-5 p-3">
+        <div className="min-h-[80vh] grid gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 max-w-6xl mx-auto mt-5 p-3">
           {products && products.map((prod) => <ProductTile data={prod} />)}
         </div>
       )}
